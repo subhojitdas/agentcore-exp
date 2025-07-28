@@ -27,7 +27,7 @@ def run(playwright: Playwright):
 
         try:
             while True:
-                page.goto("https://google.com/")
+                page.goto("https://amazon.in/")
                 console.print(page.title())
                 # Keep running
                 while True:
