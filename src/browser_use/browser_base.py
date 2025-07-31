@@ -14,10 +14,9 @@ def run(playwright: Playwright) -> None:
     page = context.pages[0]
 
     try:
-        page.goto("https://news.ycombinator.com/")
+        page.goto("https://amazon.in")
         page_title = page.title()
         print(f"Page title: {page_title}")
-        page.screenshot(path="screenshot.png")
     finally:
         page.close()
         browser.close()
